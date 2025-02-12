@@ -1,0 +1,8 @@
+{
+  "name": "pacoapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite",
+  "id": "5fcb62cf"
+}
