@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Maestros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="profile-container">
+    <img src="assets/alumno.png" alt="Perfil" class="profile-image">
+    <h2>Nombre Maestro</h2>
+    <p class="location">
+      <ion-icon name="location-outline"></ion-icon> UTCJ
+    </p>
+  </div>
+
+  <ion-list>
+    <ion-item lines="full">
+      <ion-icon name="leaf-outline" slot="start"></ion-icon>
+      <ion-label>Crear Actividades</ion-label>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-icon name="notifications-outline" slot="start"></ion-icon>
+      <ion-label>Notificaciones</ion-label>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-icon name="globe-outline" slot="start"></ion-icon>
+      <ion-label>Importar lista</ion-label>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-icon name="people-outline" slot="start"></ion-icon>
+      <ion-label>Ver alumnos</ion-label>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-icon name="heart-outline" slot="start"></ion-icon>
+      <ion-label>Ver estado de las cuadrillas</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

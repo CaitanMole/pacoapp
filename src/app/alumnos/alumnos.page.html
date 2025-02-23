@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Alumnos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="profile-container">
+    <img src="assets/alumno.png" alt="Perfil Alumno" class="profile-image">
+    <h2>"Nombre Alumno"</h2>
+    <p class="location"><ion-icon name="location-outline"></ion-icon> UTCJ</p>
+  </div>
+
+  <ion-list>
+    <ion-item lines="full" (click)="irActividades()">
+      <div class="icono-item">
+        <ion-icon name="analytics-outline"></ion-icon>
+        <ion-label>Ver mis actividades</ion-label>
+      </div>
+    </ion-item>
+
+
+
+    <ion-item lines="full">
+      <div class="icono-item">
+        <ion-icon name="notifications"></ion-icon>
+        <ion-label>Notificaciones</ion-label>
+      </div>
+    </ion-item>
+
+    <ion-item lines="full">
+      <div class="icono-item">
+        <ion-icon name="logo-ionic"></ion-icon>
+        <ion-label>Ver mi cuadrilla</ion-label>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

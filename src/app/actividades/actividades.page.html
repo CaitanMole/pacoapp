@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Actividades</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="profile-container">
+    <img src="assets/actividad.png" alt="Icono Actividades" class="profile-image">
+    <h2>Mis Actividades</h2>
+    <p class="location"><ion-icon name="calendar-outline"></ion-icon> Programadas</p>
+  </div>
+
+  <ion-content scrollY="true" class="scroll-container">
+    <ion-list>
+      <ion-item lines="null">
+        <div class="icono-item">
+          <ion-icon name="checkmark-done-outline"></ion-icon>
+          <ion-label>Actividades Completadas</ion-label>
+        </div>
+      </ion-item>
+
+      <ion-item lines="null">
+        <div class="icono-item">
+          <ion-icon name="hourglass-outline"></ion-icon>
+          <ion-label>Pendientes</ion-label>
+        </div>
+      </ion-item>
+
+      <ion-list>
+        <ion-item *ngFor="let actividad of actividades$ | async">
+          <ion-label>
+            <div *ngFor="let key of obtenerClaves(actividad)">
+              <strong>{{ key }}:</strong> {{ actividad[key] }}
+              <ion-button (click)="abrirCamara(actividad.id, key)">Subir Evidencia</ion-button>
+            </div>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+
+    </ion-list>
+  </ion-content>
+</ion-content>

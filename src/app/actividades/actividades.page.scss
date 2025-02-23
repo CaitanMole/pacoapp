@@ -1,0 +1,59 @@
+ion-content {
+  --background: #d5eaff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ddd;
+  display: block;
+  margin: 0 auto;
+}
+
+h2, p, ion-label {
+  color: black !important;
+  text-align: center;
+}
+
+/* ✅ Centrar icono y texto */
+.icono-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente */
+  gap: 10px; /* Espacio entre el icono y el texto */
+  width: 100%; /* Asegura que ocupe todo el ancho del ion-item */
+  text-align: center;
+    --border-width: 0px; /* Elimina las líneas */
+}
+
+ion-icon {
+  color: black;
+  font-size: 24px; /* Tamaño del icono */
+}
+
+ion-list {
+  background: transparent;
+  width: 100%;
+}
+
+ion-item {
+  --background: transparent;
+  --color: black;
+  --border-color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+
+}

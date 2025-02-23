@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio de sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<div class="contenedor">
+<ion-content class="ion-padding">
+  <div class="contenedor">
+    <div class="logo-container">
+      <img src="assets/file.png" alt="Logo">
+    </div>
+
+    <h2 class="titulo">Iniciar sesión:</h2>
+
+    <div class="form-container">
+      <ion-label>Correo</ion-label>
+      <ion-input class="input" placeholder="Correo Institucional" [(ngModel)]="correo"></ion-input>
+
+      <ion-label>Contraseña</ion-label>
+      <ion-input class="input" type="password" placeholder="********" [(ngModel)]="contrasena"></ion-input>
+
+      <ion-button expand="full" class="boton" (click)="iniciarSesion()">Iniciar sesión</ion-button>
+
+
+
+    </div>
+
+    <p class="mensaje">"Compromiso ambiental educativo y sustentable."</p>
+  </div>
+</ion-content>
+</div>>
